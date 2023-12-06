@@ -1,4 +1,4 @@
-Paciente
+Pacientes
 
 (PK) idPaciente (UUID, auto increment) 
 nome (str)
@@ -17,7 +17,7 @@ anamenese (str)
 questionário nórdico (img)?
 
 -------------------------
-Agendamento
+Agendamentos
 
 (PK) idAgendamento (UUID, auto increment) 
 (FK) idPaciente (UUID, auto increment) 
@@ -25,7 +25,7 @@ convenio (boolean)
 data (ano, mes, dia) (date)
 hora (str)
 -------------------------
-Prontuário
+Prontuários
 
 (PK) idProntuario (UUID, auto increment) 
 (FK) idPaciente (UUID, auto increment) 
