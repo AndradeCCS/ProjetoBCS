@@ -1,0 +1,6 @@
+template vai o html
+static vai o css
+
+verficar a melhor forma de criar o campo data e hora do agendamento
+
+campotipo date, tipo calendar, um campo para as duas informações? 1 informação por campo?

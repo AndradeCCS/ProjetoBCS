@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pacientes</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h2>
+                BCS Terapias Orientais - Pacientes
+            </h2>
+        </div>
+    </header>
+    <main>
+        <nav class="container">
+            <button class="buttonMenu"><a>Adicionar</a></button>
+            <button class="buttonMenu"><a>Editar</a></button>
+            <button class="buttonMenu"><a>Listar</a></button>
+            <button class="buttonMenu"><a>Excluir</a></button>
+        </nav>
+        <section>
+            <form action="/pacientePost" method="POST" th:object="${pacientePost}">
+                <label><h2>Cadastro de Paciente</h2></label>
+                <input type="text" name="nome" id="nomeId" placeholder="Nome">
+                <input type="text" name="tipoDocumento" id="tipoDocumentoId" placeholder="Tipo Documento">
+                <input type="text" name="documento" id="documentoId" placeholder="Documento">
+                <input type="date" name="dataNascimento" id="dataNascimentoId" placeholder="Data de Nascimento">
+                <input type="email" name="email" id="emailId" placeholder="E-mail">
+                <input type="tel" name="telefone" id="telefoneId" placeholder="Telefone">
+                <input type="tel" name="telefone2" id="telefoneI2d" placeholder="Telefone 2">
+                <input type="number" name="cep" id="cepId" placeholder="CEP">
+                <input type="text" name="estado" id="estadoId" placeholder="Estado">
+                <input type="text" name="cidade" id="cidadeId" placeholder="Cidade">
+                <input type="text" name="bairro" id="bairroId" placeholder="Bairro">
+                <input type="text" name="rua" id="ruaId" placeholder="Rua">
+                <input type="number" name="numero" id="numeroId" placeholder="Número">
+                <input type="text" name="complemento" id="complementoId" placeholder="Complemento">
+                <input type="text" name="anamnese" id="anamneseId" placeholder="Anamnese">
+                <input type="submit" value="Salvar">
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>Produzido por Andrade <span>&#174;</span></p>
+    </footer>
+</body>
+</html>

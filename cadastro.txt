@@ -1,0 +1,43 @@
+Paciente
+
+(PK) idPaciente (UUID, auto increment) 
+nome (str)
+documento (num)
+data de Nascimento (date)
+e-mail(str)
+telefone (num)
+telefone (num)
+cep (num)
+Estado (str)
+Cidade (str)
+Rua (str)
+número (num)
+complemento  (str)
+anamenese (str)
+questionário nórdico (img)?
+
+-------------------------
+Agendamento
+
+(PK) idAgendamento (UUID, auto increment) 
+(FK) idPaciente (UUID, auto increment) 
+convenio (boolean)
+data (ano, mes, dia) (date)
+hora (str)
+-------------------------
+Prontuário
+
+(PK) idProntuario (UUID, auto increment) 
+(FK) idPaciente (UUID, auto increment) 
+(FK) idAgendamento (UUID, auto increment) 
+histórico (str)
+
+-------------------------
+Convênio
+
+(PK)CNPJ (UUID)
+Empresa (str)
+Observações (str)
+
+
+
